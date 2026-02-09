@@ -50,7 +50,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'SorSU_UniSop.urls'
+ROOT_URLCONF = 'SorSU_UniShop.urls'
 
 TEMPLATES = [
     {
@@ -67,7 +67,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'SorSU_UniSop.wsgi.application'
+WSGI_APPLICATION = 'SorSU_UniShop.wsgi.application'
 
 
 # Database
