@@ -1,0 +1,66 @@
+body{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(129, 5, 4);
+}
+
+.cont{
+    border: solid;
+    border-radius: 16px;
+    height: 400px;
+    width: 500px;
+    background-color: rgb(28, 28, 28);
+    border-color: rgb(126, 38, 38);
+    margin: 60px auto;
+    padding: 50px;
+    text-align: center; 
+    color: aliceblue;
+}
+
+.cont input{
+    border-radius: 10px;
+    margin-top: 10px;
+    width: 300px;
+    height: 30px;
+    font-style: italic;
+    border-color: #ffffff;
+    padding-left: 10px;
+    background-color: antiquewhite;    
+}
+
+input:focus{
+    outline: none;
+}
+
+.cont img{
+    height: 100px;
+}
+
+.cont button{
+    border-radius: 5px;
+    margin-top: 20px;
+    width: 180px;
+    height: 30px;
+    border: none;
+}
+
+.cont a{
+    font-size: small;
+    font-style: italic;
+    color: white;
+}
+
+.log button{
+    cursor: pointer;
+    font-weight: bold;
+    color: aliceblue;
+    background-color: #3E97FF;
+}
+
+.createacc button{
+    cursor: pointer;
+    font-weight: bold;
+    color: aliceblue;
+    background-color: #c40404;
+}
