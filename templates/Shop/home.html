@@ -1,0 +1,54 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'Shop/css/home.css' %}">
+    <link rel="icon" href="{% static 'Shop/media/apple-touch-icon.png' %}">
+    <title>UniShop</title>
+</head>
+<body>
+<nav class="navbar">
+
+    <a href="{% url 'Shop:home' %}" class="logo">
+    <img src="{% static 'Shop/media/logo.gif' %}" alt="Uni-Shop"> SORSU<br>Uniform Shop
+    </a>
+
+
+    <label class="menu-icon" for="menu-toggle">&#9776;</label>
+
+    <input type="checkbox" id="menu-toggle">
+
+    <label class="overlay" for="menu-toggle"></label>
+
+    <ul class="menu">
+        <label class="close-btn" for="menu-toggle">&times;</label>
+        <li><a  href="{% url "Shop:home" %}" class="active">Home</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a  href="{% url "Shop:login" %}">Login</a></li>
+    </ul>
+</nav>
+
+<section class="products" id="products">
+    <h1>Our Products</h1>
+    <div class="product-grid">
+        {% for product in products %}
+        <div class="card">
+            <img src="{{ product.image.url }}" alt="{{ product.name }}">
+            <h3>{{ product.name }}</h3>
+            <p>{{ product.description }}</p>
+            <span>₱{{ product.price }}</span>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+<section class="vision" id="vision">
+    <h1>Vision & Mission</h1>
+    <p><strong>Vision:</strong> To become the leading student-friendly online shop.</p>
+    <p><strong>Mission:</strong> Provide affordable, quality products for university life.</p>
+</section>
+
+</body>
+</html>
