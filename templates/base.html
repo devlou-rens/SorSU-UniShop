@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}UniShop{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'Shop/css/base.css' %}">
+    <link rel="icon" href="{% static 'Shop/media/apple-touch-icon.png' %}">
+</head>
+<body>
+
+<div class="banner">
+
+    <h1>Wecome to SorSU-UniShop</h1>
+    <p>Everything you need for campus life — just one click away.</p>
+
+    <a href="{% url "Shop:home" %}">
+        <button>Shop Now!</button>
+    </a>
+</div>
+
+</body>
+</html>
