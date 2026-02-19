@@ -23,15 +23,15 @@
     <label class="overlay" for="menu-toggle"></label>
 
     <ul class="menu">
-        <label class="close-btn" for="menu-toggle">&times;</label>
-        <li><a  href="{% url "Shop:home" %}" class="active">Home</a></li>
+        <label class="close-btn" for="menu-toggle"></label>
+        <li><a  href="{% url 'Shop:home' %}" class="active">Home</a></li>
         <li><a href="#">Products</a></li>
         <li><a  href="{% url "Shop:login" %}">Login</a></li>
     </ul>
 </nav>
 
 <section class="products" id="products">
-    <h1>Our Products</h1>
+    <h1>Get Your Official Uniform</h1>
     <div class="product-grid">
         {% for product in products %}
         <div class="card">
